@@ -930,10 +930,6 @@ async function addProject(){
     }
   } else save(null);
 }
-  
-  var fi=document.getElementById('pi-f');
-  if(fi.files[0]){var r=new FileReader();r.onload=function(e){save(e.target.result);};r.readAsDataURL(fi.files[0]);}
-  else save(null);
 
 async function delProject(id){
   if(!confirm('Delete this project from Supabase?'))return;
